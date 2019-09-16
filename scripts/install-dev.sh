@@ -233,7 +233,7 @@ EOS
   esac
 }
 
-install_docker-compose() {
+install_docker_compose() {
     show_info "Install docker-compose"
     case $DISTRO in
     Debian)
@@ -284,7 +284,7 @@ if ! type "docker" >/dev/null 2>&1; then
 fi
 if ! type "docker-compose" >/dev/null 2>&1; then
     show_error "docker-compose is not available!"
-    install_docker-compose
+    install_docker_compose
 fi
 
 # Install pyenv
